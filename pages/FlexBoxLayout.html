@@ -1,77 +1,110 @@
 <!doctype html>
-<title>Example</title>
-<style>
-  * {
-    box-sizing: border-box; 
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-  }
-  #main {
-    display: flex;
-    flex: 1;
-  }
-  #main > article {
-    flex: 1;
-    order: 1;
-  }
-  #main > nav, 
-  #main > aside {
-    flex: 0 0 20vw;
-  }
-  #main > nav {
-    background: #D7E8D4;
-    order: 3;
-  }
-  #main > aside {
-    background: beige;
-    order: 2;
-  }
-  header, footer {
-    text-align: center;
-    background: yellowgreen;
-    height: 20vh;
-    flex : 0 0 0;
-  }
-  header{
+<head>
+  <title>BridgeLabz</title>
+  <link rel="shortcut icon" href="../assets/fav.png">
+  <style>
+    * {
+      box-sizing: border-box; 
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    #main {
+      display: flex;
+      flex: 1;
+      background-color: bisque;
+    }
+    #main > article {
+      flex: 1;
+      order: 1;
+    }
+    #main > nav, 
+    #main > aside {
+      flex: 0 0 20vw;
+    }
+    #main > nav {
+      background: #D7E8D4;
+      order: 3;
+    }
+    #main > aside {
+      background: beige;
+      order: 2;
+    }
+    header, footer {
+      text-align: center;
+      background: yellowgreen;
+      height: 20vh;
+      flex : 0 0 0;
+    }
+    header{
       background: tomato;
-  }
-  header, footer, article, nav, aside {
-    padding: 1em;
-  }
-</style>
+    }
+    header, footer, article, nav, aside {
+      padding: 1em;
+    }
+    h1{
+      font-size: 60px;
+      margin: 0;
+      padding: 20px 0;
+      color: #000;
+      text-shadow: 3px 3px 1px blueviolet;
+    }
+    h2{
+      text-align: center;
+    }
+    article {
+      padding: 10px;
+      margin: 10px;
+      background: beige;
+      font-size: 20px;
+    }
+    #nav > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+    }
+
+    
+    
+  </style>
+</head>
 <body>
-  <header><h1>Header Flex box demo</h1> </header>
+  <header><h1>BridgeLabz is cool</h1> </header>
   <div id="main">
     <div>
         <article> 
-            <h2>First Article </h2> 
-            <p>A taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling. The tortilla is 
-                then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, 
-                beans, vegetables, and cheese, allowing for great versatility and variety. They are often garnished with various condiments, such as 
-                salsa, guacamole, or sour cream, and vegetables, such as lettuce, onion, tomatoes, and chiles. Tacos are a common form of antojitos, 
-                or Mexican street food, which have spread around the world.</p>
+          <p> At BridgeLabz, we're a techie community of</p>
+          <ul>
+              <li>technologists</li>
+              <li>thinkers</li>
+              <li>builders</li>
+          </ul>
         </article>
         <article>
-            <h2>Second article</h2>
-            <p>A taco is a traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a filling. The tortilla is 
-            then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, 
-            beans, vegetables, and cheese, allowing for great versatility and variety. They are often garnished with various condiments, such as 
-            salsa, guacamole, or sour cream, and vegetables, such as lettuce, onion, tomatoes, and chiles. Tacos are a common form of antojitos, 
-            or Mexican street food, which have spread around the world.</p>
-        </article>
-        <article>
-            <h2>First article</h2>
-            <p> Pizza is an Italian dish consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, 
-                and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at 
-                a high temperature, traditionally in a wood-fired oven.[1] A small pizza is sometimes called a pizzetta. A person who makes pizza 
-                is known as a pizzaiolo.</p>
+          <p>Working togther to keep the tech Employability of Engineers alive and accessible, so Tech Companies worldwide can get
+            contributors and creators for Technology Solutions. We beleive this act of human collaboration across an Employability
+            platform is essential to individual growth and our collective future.</p>
+            <p> To know about us, visit <a href="https://www.bridgelabz.com/">BridgeLabz</a> to learn even more about our mission i.e
+               <strong>Employability to all</strong></p>
         </article>
     </div>
-    <nav><h2>NavBar</h2></nav>
-    <aside><h2>Side Bar</h2></aside>
+    <nav id="nav">
+      <h2>NavBar</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <aside>
+      <img src="../assets/BL_logo_square_jpg.jpg" alt="Hover Text" width = "100%">
+      <h2>Aside</h2>
+    </aside>
   </div>
   <footer><h2>Footer</h2></footer>
 </body>
